@@ -1,0 +1,69 @@
+
+.ratio-box--16-9 {
+  position: relative;
+
+  &::before {
+    content: '';
+    padding-top: 56.25%;
+    display: block;
+  }
+
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.ratio-box--4-3 {
+  position: relative;
+
+  &::before {
+    content: '';
+    padding-top: 75%;
+    display: block;
+  }
+
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.ratio-box--1-1 {
+  position: relative;
+
+  &::before {
+    content: '';
+    padding-top: 100%;
+    display: block;
+  }
+
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@include breakpoint($mobileLandscape) {
+  body {
+    aspect-ratio: 16/9;
+  }
+}
+
+@include breakpoint($mobilePortrait) {
+  body {
+    aspect-ratio: 4/3;
+  }
+}
