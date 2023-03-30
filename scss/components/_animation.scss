@@ -1,0 +1,103 @@
+@keyframes sasha {
+  0% {
+    left: 0;
+    top: 0;
+    transform: rotate(0deg);
+  }
+  8% {
+    left: calc(100% - 50px);
+    top: 0;
+    transform: rotate(90deg);
+  }
+  16% {
+    left: calc(100% - 50px);
+    top: 50px;
+    transform: rotate(180deg);
+  }
+  24% {
+    left: 0;
+    top: 50px;
+    transform: rotate(270deg);
+  }
+  32% {
+    left: 0;
+    top: 100px;
+    transform: rotate(0deg);
+  }
+  40% {
+    left: calc(100% - 50px);
+    top: 100px;
+    transform: rotate(90deg);
+  }
+  48% {
+    left: calc(100% - 50px);
+    top: 150px;
+    transform: rotate(180deg);
+  }
+  56% {
+    left: 0;
+    top: 150px;
+    transform: rotate(270deg);
+  }
+  64% {
+    left: 0;
+    top: 200px;
+    transform: rotate(0deg);
+  }
+  72% {
+    left: calc(100% - 50px);
+    top: 200px;
+    transform: rotate(90deg);
+  }
+  80% {
+    left: calc(100% - 50px);
+    top: 250px;
+    transform: rotate(180deg);
+  }
+  88% {
+    left: 0;
+    top: 250px;
+    transform: rotate(270deg);
+  }
+  100% {
+    left: 0;
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+
+.animation-area {
+  background-color: #ccc;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    padding-top: 20%;
+  }
+
+  &:hover {
+    .animation-child {
+      animation-play-state: paused;
+    }
+  }
+
+}
+
+.animation-child {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid #f00;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(90deg);
+  animation-name: sasha;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  //animation-direction: alternate;
+  animation-fill-mode: none;
+  animation-delay: none;
+}
