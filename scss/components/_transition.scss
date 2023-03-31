@@ -1,0 +1,73 @@
+.transition-area {
+  background-color: #ccc;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    padding-top: 20%;
+  }
+
+  &:hover {
+    .transition-child {
+      left: calc(100% - 50px);
+      background-color: green;
+      opacity: 0.4;
+    }
+    .transition-child--1 {
+      left: calc(100% - 50px);
+      background-color: orange;
+      opacity: 0.6;
+    }
+    .transition-child--2 {
+      left: calc(100% - 50px);
+      background-color: brown;
+      opacity: 0.8;
+    }
+    .transition-child--3 {
+      left: calc(100% - 50px);
+      background-color: chartreuse;
+      opacity: 0.9;
+    }
+  }
+}
+
+.transition-child {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: left 2s linear 0s, background-color 2s linear 2s, opacity 2s linear 4s;
+}
+
+.transition-child--1 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(75, 37, 140);
+  position: absolute;
+  top: 52px;
+  left: 0;
+  transition: left 3s linear 0s, background-color 3s linear 2s, opacity 3s linear 4s;
+}
+
+.transition-child--2 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(217, 255, 0);
+  position: absolute;
+  top: 104px;
+  left: 0;
+  transition: left 4s linear 0s, background-color 4s linear 2s, opacity 4s linear 4s;
+}
+
+.transition-child--3 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(185, 17, 166);
+  position: absolute;
+  top: 156px;
+  left: 0;
+  transition: left 5s linear 0s, background-color 5s linear 2s, opacity 5s linear 4s;
+}

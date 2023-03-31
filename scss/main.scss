@@ -1,11 +1,21 @@
 @import'../node_modules/breakpoint-sass/stylesheets/breakpoint';
-@import 'base/reset' ;
-@import 'base/variables' ;
-@import 'base/mixins' ;
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/mixins';
 @import 'components/background-box';
-@import 'components/fonts' ;
+@import 'components/fonts';
 @import '../node_modules/bootstrap/scss/bootstrap-grid.scss';
 @import 'components/filters';
 @import 'components/gradients';
-@import 'components/ratio-box'
+@import 'components/ratio-box';
+@import 'components/transform';
+@import 'components/cards';
+@import 'components/cube';
+@import 'components/box';
+@import 'components/transition';
+@import 'components/animation';
+
+body {
+  font-family: 'Myriad Pro', sans-serif;
+}
 
