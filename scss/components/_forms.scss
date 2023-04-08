@@ -1,0 +1,38 @@
+.dropdown-button {
+  border: 1px solid #000;
+  padding: 10px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.dropdown-input {
+  &:checked ~ .dropdown-content {
+    display: block;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards__button {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: #ccc;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.cards__input--1:checked ~ .cards__button--1,
+.cards__input--2:checked ~ .cards__button--2,
+.cards__input--3:checked ~ .cards__button--3,
+.cards__input--4:checked ~ .cards__button--4 {
+  opacity: 1;
+}

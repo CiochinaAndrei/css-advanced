@@ -1,7 +1,9 @@
 @import'../node_modules/breakpoint-sass/stylesheets/breakpoint';
+@import '../node_modules/select2/dist/css/select2.css';
 @import 'base/reset';
 @import 'base/variables';
 @import 'base/mixins';
+@import 'base/helpers';
 @import 'components/background-box';
 @import 'components/fonts';
 @import '../node_modules/bootstrap/scss/bootstrap-grid.scss';
@@ -14,8 +16,10 @@
 @import 'components/box';
 @import 'components/transition';
 @import 'components/animation';
+@import 'components/forms';
 
 body {
   font-family: 'Myriad Pro', sans-serif;
 }
+
 

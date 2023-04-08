@@ -1,4 +1,19 @@
 .sidebar {
   width: $sidebar-width;
-  background-color: pink;
+
+  a {
+    display: flex;
+    text-decoration: none;
+    color: #3B3D40;
+    padding: 16px 122px 16px 24px;
+    border: solid 1px #EEEEEE;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  a:hover {
+    border-left: solid 5px #F59A2C;
+    color: #F59A2C;
+  }
 }

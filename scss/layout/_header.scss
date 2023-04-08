@@ -1,4 +1,57 @@
 .header {
   height: $header-height;
-  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 230px;
+  border-left: solid 1px #EEEEEE;
+  border-bottom: solid 1px #EEEEEE;
+
+  svg {
+    color:#BCBCBC;
+  }
+  
+  svg:hover {
+    color: #F5A623;
+  }
 }
+
+.header__links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-right: 66px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #BCBCBC;
+  border-radius: 100px;
+  height: 43.33px;
+  width: 275px;
+  margin-left: 55px;
+
+  button,
+  input {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+
+  input {
+    padding-left: 26px ;
+  }
+
+  button {
+    padding-right: 10px;
+  }
+}
+
+
+
